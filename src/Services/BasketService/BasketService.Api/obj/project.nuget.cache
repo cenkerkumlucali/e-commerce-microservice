@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "D4tf7aW+HJq04iLs8Oz/e80K8Vvabmz8Q5ij8l5/IzCsOEdgftefyQUIsvbRr0lO/RFAr/aDQzZArNT7Bl6tpw==",
+  "success": true,
+  "projectFilePath": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
