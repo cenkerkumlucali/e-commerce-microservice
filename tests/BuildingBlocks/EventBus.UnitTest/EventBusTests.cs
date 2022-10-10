@@ -24,26 +24,41 @@ public class EventBusTests
     {
         _serviceCollection.AddSingleton<IEventBus>(sp =>
         {
-            EventBusConfig config = new()
-            {   
-                ConnectionRetryCount = 5,
-                SubscriberClientAppName = "EventBus.UniTest",
-                DefaultTopicName = "CkTopicName",
-                EventBusType = EventBusType.RabbitMQ,
-                EventNameSuffix = "IntegrationEvent",
-                // Connection = new ConnectionFactory()
-                // {
-                //     HostName = "localhost",
-                //     Port = 15672,
-                //     UserName = "guest",
-                //     Password = "guest"
-                // }
-            };
-            return EventBusFactory.Create(config,sp);
+            return EventBusFactory.Create(GetRabbitMQConfig(),sp);
         });
         var sp = _serviceCollection.BuildServiceProvider();
         var eventBus = sp.GetRequiredService<IEventBus>();
         eventBus.Subscribe<OrderCreatedIntegrationEvent,OrderCreatedIntegrationEventHandler>();
         eventBus.UnSubscribe<OrderCreatedIntegrationEvent,OrderCreatedIntegrationEventHandler>();
+    }
+
+    [Fact]
+    public void send_message_to_rabbitmq()
+    {
+        _serviceCollection.AddSingleton<IEventBus>(sp =>
+        {
+            return EventBusFactory.Create(GetRabbitMQConfig(),sp);
+        });
+        var sp = _serviceCollection.BuildServiceProvider();
+        var eventBus = sp.GetRequiredService<IEventBus>();
+        eventBus.Publish(new OrderCreatedIntegrationEvent(1));
+    }
+    private EventBusConfig GetRabbitMQConfig()
+    {
+       return new EventBusConfig()
+        {   
+            ConnectionRetryCount = 5,
+            SubscriberClientAppName = "EventBus.UniTest",
+            DefaultTopicName = "CkTopicName",
+            EventBusType = EventBusType.RabbitMQ,
+            EventNameSuffix = "IntegrationEvent",
+            // Connection = new ConnectionFactory()
+            // {
+            //     HostName = "localhost",
+            //     Port = 15672,
+            //     UserName = "guest",
+            //     Password = "guest"
+            // }
+        };
     }
 }
