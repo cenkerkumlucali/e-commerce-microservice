@@ -18,10 +18,10 @@ public class EventBusServiceBus : BaseEventBus
     {
         _logger = serviceProvider.GetService(typeof(ILogger<EventBusServiceBus>)) as ILogger<EventBusServiceBus>;
         _managementClient = new ManagementClient(config.EventBusConnectionString);
-        _topicClient = createTopicClient();
+        _topicClient = CreateTopicClient();
     }
 
-    private ITopicClient createTopicClient()
+    private ITopicClient CreateTopicClient()
     {
         if (_topicClient == null || _topicClient.IsClosedOrClosing)
         {
@@ -130,7 +130,7 @@ public class EventBusServiceBus : BaseEventBus
         bool ruleExists;
         try
         {
-            var rule = _managementClient.GetRuleAsync(EventBusConfig.DefaultTopicName, eventName, eventName)
+            var rule = _managementClient.GetRuleAsync(EventBusConfig.DefaultTopicName, GetSubName(eventName), eventName)
                 .GetAwaiter()
                 .GetResult();
             ruleExists = rule != null;

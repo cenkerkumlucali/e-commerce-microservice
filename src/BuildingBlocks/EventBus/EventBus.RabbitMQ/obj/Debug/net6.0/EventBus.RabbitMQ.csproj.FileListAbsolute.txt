@@ -1,0 +1,15 @@
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/bin/Debug/net6.0/EventBus.RabbitMQ.deps.json
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/bin/Debug/net6.0/EventBus.RabbitMQ.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/bin/Debug/net6.0/EventBus.RabbitMQ.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/bin/Debug/net6.0/EventBus.Base.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/bin/Debug/net6.0/EventBus.Base.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/refint/EventBus.RabbitMQ.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/EventBus.RabbitMQ.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/Debug/net6.0/ref/EventBus.RabbitMQ.dll

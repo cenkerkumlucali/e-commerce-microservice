@@ -1,0 +1,15 @@
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/bin/Debug/net6.0/EventBus.AzureServiceBus.deps.json
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/bin/Debug/net6.0/EventBus.AzureServiceBus.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/bin/Debug/net6.0/EventBus.AzureServiceBus.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/bin/Debug/net6.0/EventBus.Base.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/bin/Debug/net6.0/EventBus.Base.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.csproj.CopyComplete
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/refint/EventBus.AzureServiceBus.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/EventBus.AzureServiceBus.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/Debug/net6.0/ref/EventBus.AzureServiceBus.dll

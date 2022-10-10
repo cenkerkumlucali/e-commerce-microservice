@@ -1,0 +1,12 @@
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/bin/Debug/net6.0/EventBus.Base.deps.json
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/bin/Debug/net6.0/EventBus.Base.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/bin/Debug/net6.0/EventBus.Base.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.AssemblyInfo.cs
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/refint/EventBus.Base.dll
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/EventBus.Base.pdb
+/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/Debug/net6.0/ref/EventBus.Base.dll
