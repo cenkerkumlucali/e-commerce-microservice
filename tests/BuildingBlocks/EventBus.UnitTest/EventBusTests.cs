@@ -29,7 +29,7 @@ public class EventBusTests
         var sp = _serviceCollection.BuildServiceProvider();
         var eventBus = sp.GetRequiredService<IEventBus>();
         eventBus.Subscribe<OrderCreatedIntegrationEvent,OrderCreatedIntegrationEventHandler>();
-        eventBus.UnSubscribe<OrderCreatedIntegrationEvent,OrderCreatedIntegrationEventHandler>();
+        // eventBus.UnSubscribe<OrderCreatedIntegrationEvent,OrderCreatedIntegrationEventHandler>();
     }
 
     [Fact]
@@ -43,6 +43,7 @@ public class EventBusTests
         var eventBus = sp.GetRequiredService<IEventBus>();
         eventBus.Publish(new OrderCreatedIntegrationEvent(1));
     }
+
     private EventBusConfig GetRabbitMQConfig()
     {
        return new EventBusConfig()
