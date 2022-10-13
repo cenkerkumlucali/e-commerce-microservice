@@ -10,8 +10,10 @@ public class CatalogItem
     public string PictureUri { get; set; }
     public int AvailableStock { get; set; }
     public bool OnReorder { get; set; }
+
     public int CatalogTypeId { get; set; }
     public CatalogType CatalogType { get; set; }
+
     public int CatalogBrandId { get; set; }
-    public CatalogBrand CatalogBrand { get; set; }  
+    public CatalogBrand CatalogBrand { get; set; }
 }

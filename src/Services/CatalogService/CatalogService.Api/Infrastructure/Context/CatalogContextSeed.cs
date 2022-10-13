@@ -1,8 +1,17 @@
 using CatalogService.Api.Core.Domain;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Logging;
 using Polly;
+using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.IO.Compression;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace CatalogService.Api.Infrastructure.Context
 {
@@ -142,30 +151,32 @@ namespace CatalogService.Api.Infrastructure.Context
         };
             }
 
-            string fileName = Path.Combine(contentRootPath, "CatalogItems.txt");
-
-            if (!File.Exists(fileName))
-            {
-                return GetPreconfiguredItems();
-            }
-
-            var catalogTypeIdLookup = context.CatalogTypes.ToDictionary(ct => ct.Type, ct => ct.Id);
-            var catalogBrandIdLookup = context.CatalogBrands.ToDictionary(ct => ct.Brand, ct => ct.Id);
-
-            return File.ReadAllLines(fileName)
-                        .Skip(1) // skip header row
-                        .Select(row => row.Split(','))
-                        .Select(column => new CatalogItem()
-                        {
-                            CatalogTypeId = catalogTypeIdLookup[column[0]],
-                            CatalogBrandId = catalogBrandIdLookup[column[1]],
-                            Description = column[2].Trim('"').Trim(),
-                            Name = column[3].Trim('"').Trim(),
-                            Price = Decimal.Parse(column[4].Trim('"').Trim(), NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture),
-                            PictureFileName = column[5].Trim('"').Trim(),
-                            AvailableStock = string.IsNullOrEmpty(column[6]) ? 0 : int.Parse(column[6]),
-                            OnReorder = Convert.ToBoolean(column[7])
-                        });
+            // string fileName = Path.Combine(contentRootPath, "CatalogItems.txt");
+            //
+            // if (!File.Exists(fileName))
+            // {
+            //     return GetPreconfiguredItems();
+            // }
+            //
+            // var catalogTypeIdLookup = context.CatalogTypes.ToDictionary(ct => ct.Type, ct => ct.Id);
+            // var catalogBrandIdLookup = context.CatalogBrands.ToDictionary(ct => ct.Brand, ct => ct.Id);
+            // var list = File.ReadAllLines(fileName)
+            //     .Skip(1);
+            // return File.ReadAllLines(fileName)
+            //             .Skip(1) // skip header row
+            //             .Select(row => row.Split(','))
+            //             .Select(column => new CatalogItem()
+            //             {
+            //                 CatalogTypeId = catalogTypeIdLookup[column[0]],
+            //                 CatalogBrandId = catalogBrandIdLookup[column[1]],
+            //                 Description = column[2].Trim('"').Trim(),
+            //                 Name = column[3].Trim('"').Trim(),
+            //                 Price = Decimal.Parse(column[4].Trim('"').Trim(), NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture),
+            //                 PictureFileName = column[5].Trim('"').Trim(),
+            //                 AvailableStock = string.IsNullOrEmpty(column[6]) ? 0 : int.Parse(column[6]),
+            //                 OnReorder = Convert.ToBoolean(column[7])
+            //             });
+            return GetPreconfiguredItems();
         }
 
         private void GetCatalogItemPictures(string contentRootPath, string picturePath)

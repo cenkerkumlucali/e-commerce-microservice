@@ -10,29 +10,30 @@ public class CatalogItemEntityTypeConfiguration : IEntityTypeConfiguration<Catal
     public void Configure(EntityTypeBuilder<CatalogItem> builder)
     {
         builder.ToTable("Catalog", CatalogContext.DEFAULT_SCHEMA);
-        
-        builder.Property(c => c.Id)
+        builder.HasKey(ci => ci.Id);
+
+        builder.Property(ci => ci.Id)
             .UseHiLo("catalog_hilo")
             .IsRequired();
-        
-        builder.Property(c => c.Name)
-            .IsRequired(true)
+
+        builder.Property(cb => cb.Name)
+            .IsRequired()
             .HasMaxLength(50);
-        
-        builder.Property(c => c.Price)
+
+        builder.Property(cb => cb.Price)
             .IsRequired();
-        
-        builder.Property(c => c.PictureFileName)
+
+        builder.Property(cb => cb.PictureFileName)
             .IsRequired(false);
 
-        builder.Ignore(c => c.PictureUri);
+        builder.Ignore(ci => ci.PictureUri);
 
-        builder.HasOne(c => c.CatalogBrand)
+        builder.HasOne(ci => ci.CatalogBrand)
             .WithMany()
-            .HasForeignKey(c => c.CatalogBrandId);
-        
-        builder.HasOne(c => c.CatalogType)
+            .HasForeignKey(ci => ci.CatalogBrandId);
+
+        builder.HasOne(ci => ci.CatalogType)
             .WithMany()
-            .HasForeignKey(c => c.CatalogTypeId);
+            .HasForeignKey(ci => ci.CatalogTypeId);
     }
 }
