@@ -1,6 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2afefb0b_002D5c85_002D4f28_002D95bc_002D2fea59a9f015/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="subscribe_event_on_rabbitmq_test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;xUnit::12D3AC36-BEDA-43C0-A42A-35D593D51C22::net6.0::EventBus.UnitTest.EventBusTests.subscribe_event_on_rabbitmq_test&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::12D3AC36-BEDA-43C0-A42A-35D593D51C22::net6.0::EventBus.UnitTest.EventBusTests.subscribe_event_on_rabbitmq_test&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;And&gt;
+      &lt;TestAncestor&gt;
+        &lt;TestId&gt;xUnit::12D3AC36-BEDA-43C0-A42A-35D593D51C22::net6.0::EventBus.UnitTest.EventBusTests.send_message_to_rabbitmq&lt;/TestId&gt;
+      &lt;/TestAncestor&gt;
+      &lt;Project Location="/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest" Presentation="&amp;lt;tests&amp;gt;\&amp;lt;BuildingBlocks&amp;gt;\&amp;lt;EventBus.UnitTest&amp;gt;" /&gt;
+      &lt;Namespace&gt;EventBus.UnitTest&lt;/Namespace&gt;
+    &lt;/And&gt;
+  &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
