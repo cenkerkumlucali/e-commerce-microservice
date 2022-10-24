@@ -2,6 +2,7 @@ using System.Net.Sockets;
 using System.Text;
 using EventBus.Base;
 using EventBus.Base.Event;
+using EventBus.Base.Events;
 using Newtonsoft.Json;
 using Polly;
 using RabbitMQ.Client;
@@ -32,7 +33,7 @@ public class EventBusRabbitMQ : BaseEventBus
 
         _persistentConnection = new RabbitMQPersistentConnection(_connectionFactory, config.ConnectionRetryCount);
         _consumerChannel = CreateConsumerChannel();
-        SubscriptionManager.OnEventRemoved += SubscriptionManagerOnOnEventRemoved;
+        SubsManager.OnEventRemoved += SubscriptionManagerOnOnEventRemoved;
     }
 
     private void SubscriptionManagerOnOnEventRemoved(object? sender, string eventName)
@@ -43,7 +44,7 @@ public class EventBusRabbitMQ : BaseEventBus
         _consumerChannel.QueueUnbind(queue: eventName,
             exchange: EventBusConfig.DefaultTopicName,
             routingKey: eventName);
-        if (SubscriptionManager.IsEmpty)
+        if (SubsManager.IsEmpty)
             _consumerChannel.Close();
     }
 
@@ -61,8 +62,9 @@ public class EventBusRabbitMQ : BaseEventBus
             });
         var eventName = @event.GetType().Name;
         eventName = ProcessEventName(eventName);
+        
         _consumerChannel.ExchangeDeclare(exchange: EventBusConfig.DefaultTopicName, type: "direct");
-
+        
         var message = JsonConvert.SerializeObject(@event);
         var body = Encoding.UTF8.GetBytes(message);
 
@@ -70,18 +72,24 @@ public class EventBusRabbitMQ : BaseEventBus
         {
             var properties = _consumerChannel.CreateBasicProperties();
             properties.DeliveryMode = 2;
-            _consumerChannel.QueueDeclare(queue: GetSubName(eventName),
-                durable: true,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null
-            );
+            // _consumerChannel.QueueDeclare(queue: GetSubName(eventName),
+            //     durable: true,
+            //     exclusive: false,
+            //     autoDelete: false,
+            //     arguments: null
+            // );
+            //
+            // _consumerChannel.QueueBind(queue: GetSubName(eventName),
+            //     exchange: EventBusConfig.DefaultTopicName,
+            //      routingKey: eventName);
+
             _consumerChannel.BasicPublish(
                 exchange: EventBusConfig.DefaultTopicName,
                 routingKey: eventName,
                 mandatory: true,
-                basicProperties:properties,
-                body:body);
+                basicProperties: properties,
+                body: body
+            );
         });
     }
 
@@ -89,7 +97,7 @@ public class EventBusRabbitMQ : BaseEventBus
     {
         var eventName = typeof(T).Name;
         eventName = ProcessEventName(eventName);
-        if (!SubscriptionManager.HasSubscriptionForEvent(eventName))
+        if (!SubsManager.HasSubscriptionForEvent(eventName))
         {
             if (!_persistentConnection.IsConnected)
                 _persistentConnection.TryConnect();
@@ -105,13 +113,13 @@ public class EventBusRabbitMQ : BaseEventBus
                 routingKey: eventName);
         }
 
-        SubscriptionManager.AddSubscription<T, TH>();
+        SubsManager.AddSubscription<T, TH>();
         StartBasicConsumer(eventName);
     }
 
     public override void UnSubscribe<T, TH>()
     {
-        SubscriptionManager.RemoveSubscription<T, TH>();
+        SubsManager.RemoveSubscription<T, TH>();
     }
 
     private IModel CreateConsumerChannel()

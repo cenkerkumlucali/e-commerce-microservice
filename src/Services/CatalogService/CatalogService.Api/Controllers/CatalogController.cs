@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CatalogService.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class CatalogController : ControllerBase
     {

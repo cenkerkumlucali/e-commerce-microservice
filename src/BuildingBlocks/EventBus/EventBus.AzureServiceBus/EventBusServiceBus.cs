@@ -1,6 +1,7 @@
 using System.Text;
 using EventBus.Base;
 using EventBus.Base.Event;
+using EventBus.Base.Events;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.ServiceBus.Management;
 using Microsoft.Extensions.Logging;
@@ -57,14 +58,14 @@ public class EventBusServiceBus : BaseEventBus
     {
         var eventName = typeof(T).Name;
         eventName = ProcessEventName(eventName); //example: OrderCreated
-        if (!SubscriptionManager.HasSubscriptionForEvent(eventName))
+        if (!SubsManager.HasSubscriptionForEvent(eventName))
         {
             ISubscriptionClient subscriptionClient = CreateSubscriptionClientIfNotExists(eventName);
             RegisterSubscriptionClientMessageHandler(subscriptionClient);
         }
 
         _logger.LogInformation($"Subscribing to event {eventName} with {typeof(TH).Name}");
-        SubscriptionManager.AddSubscription<T, TH>();
+        SubsManager.AddSubscription<T, TH>();
     }
 
     public override void UnSubscribe<T, TH>()
@@ -84,7 +85,7 @@ public class EventBusServiceBus : BaseEventBus
         }
 
         _logger.LogInformation("Unsubscribing from event {EventName}", eventName);
-        SubscriptionManager.RemoveSubscription<T, TH>();
+        SubsManager.RemoveSubscription<T, TH>();
     }
 
     private void RegisterSubscriptionClientMessageHandler(ISubscriptionClient subscriptionClient)

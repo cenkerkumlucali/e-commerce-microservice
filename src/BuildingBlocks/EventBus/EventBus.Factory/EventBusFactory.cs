@@ -7,13 +7,9 @@ namespace EventBus.Factory;
 
 public static class EventBusFactory
 {
-    public static IEventBus Create(EventBusConfig config, IServiceProvider serviceProvider)
+    public static IEventBus Create(EventBusConfig config, IServiceProvider serviceProvider) => config.EventBusType switch
     {
-        //var conn = new DefaultServiceBusPersisterConnection(config);
-        return config.EventBusType switch
-        {
-            EventBusType.AzureServiceBus => new EventBusServiceBus(config, serviceProvider),
-            _ => new EventBusRabbitMQ(config, serviceProvider),
-        };
-    }
+        EventBusType.AzureServiceBus => new EventBusServiceBus(config, serviceProvider),
+        _ => new EventBusRabbitMQ(config, serviceProvider)
+    };
 }
