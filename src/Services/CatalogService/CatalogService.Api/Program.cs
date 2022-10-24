@@ -7,7 +7,7 @@ var webApplicationOptions = new WebApplicationOptions
     Args = args,
     WebRootPath = "pics",
     ContentRootPath = Directory.GetCurrentDirectory()
-};   
+};
 var builder = WebApplication.CreateBuilder(webApplicationOptions);
 
 builder.Services.Configure<CatalogSettings>(builder.Configuration.GetSection("CatalogSettings"));
@@ -15,7 +15,9 @@ builder.Services.Configure<CatalogSettings>(builder.Configuration.GetSection("Ca
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.ConfigureConsul(builder.Configuration);
 builder.Services.ConfigureDbContext(builder.Configuration);
+
 
 var app = builder.Build();
 
@@ -40,4 +42,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
+app.Start();
+
+app.RegisterWithConsul(app.Lifetime);
+
+app.WaitForShutdown();
+
