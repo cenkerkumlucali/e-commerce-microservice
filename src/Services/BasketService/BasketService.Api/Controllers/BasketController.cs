@@ -12,7 +12,7 @@ namespace BasketService.Api.Controllers;
 
 [Route("api/v1/[controller]")]
 [ApiController]
-// [Authorize]
+[Authorize]
 public class BasketController : ControllerBase
 {
     private readonly IBasketRepository _basketRepository;
@@ -58,11 +58,11 @@ public class BasketController : ControllerBase
     {
         var userId = _identityService.GetUserName();
 
-        var basket = await _basketRepository.GetBasketAsync("cenker");
+        var basket = await _basketRepository.GetBasketAsync(userId);
 
         if (basket == null)
         {
-            basket = new CustomerBasket("cenker");
+            basket = new CustomerBasket(userId);
         }
 
         basket.Items.Add(request);
