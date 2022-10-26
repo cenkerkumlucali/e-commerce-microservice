@@ -7,7 +7,7 @@ public static class AuthRegistration
 {
     public static IServiceCollection ConfigureAuth(this IServiceCollection services, IConfiguration configuration)
     {
-        var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["AuthConfig:Secret"]));
+        var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["AuthConfig:Secret"]));
 
         services.AddAuthentication(opt =>
         {
@@ -21,7 +21,7 @@ public static class AuthRegistration
                 ValidateAudience = false,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = signingKey
+                IssuerSigningKey = signinKey
             };
         });
 

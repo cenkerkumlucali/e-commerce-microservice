@@ -13,9 +13,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.ConfigureConsul(builder.Configuration);
-builder.Services.ConfigureAuth(builder.Configuration);
-builder.Services.AddSingleton(sp => sp.ConfigureRedis(builder.Configuration));
 ConfigureServicesExt(builder.Services);
 
 var app = builder.Build();
@@ -30,6 +27,8 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers();
@@ -37,6 +36,7 @@ app.MapControllers();
 app.Start();
 
 app.RegisterWithConsul(app.Lifetime);
+ConfigureSubscription(app.Services);
 
 app.WaitForShutdown();
 

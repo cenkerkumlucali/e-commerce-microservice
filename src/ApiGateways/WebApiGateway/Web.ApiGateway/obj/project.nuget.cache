@@ -1,15 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "BosVD4r9BWvYaPJtcRI40020UZCMp+GczrmOrPTjNaQZJslbqo6dPnOinF0LU1ncz3r7wlRSJXYdaZ2wnN5N7w==",
+  "dgSpecHash": "6NzZfLgOOYezBomIROjG/luHJt3o09g5phTbYUSt9xlk1/affOzT+nActT4Pod/YBE13R2sE/oxIzEK/22N3Fg==",
   "success": true,
   "projectFilePath": "/Users/cenkerkumlucali/codes/microservice/src/ApiGateways/WebApiGateway/Web.ApiGateway/Web.ApiGateway.csproj",
   "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/consul/1.6.1.1/consul.1.6.1.1.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/fluentvalidation/9.3.0/fluentvalidation.9.3.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.aspnetcore.jsonpatch/5.0.0/microsoft.aspnetcore.jsonpatch.5.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.aspnetcore.middlewareanalysis/5.0.0/microsoft.aspnetcore.middlewareanalysis.5.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/5.0.0/microsoft.aspnetcore.mvc.newtonsoftjson.5.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.diagnosticadapter/3.1.10/microsoft.extensions.diagnosticadapter.3.1.10.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/ocelot/17.0.0/ocelot.17.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/ocelot.provider.consul/17.0.0/ocelot.provider.consul.17.0.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+    "/Users/cenkerkumlucali/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

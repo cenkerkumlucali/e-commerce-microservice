@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OBVIMQSiOeUUGZb0iHPNymVwsHdjAx0y0uyd2rJR/wS+0w+C+AxIkDzL7WEytMKdFkYaiaE+j9Ymv1T+Hyn1+w==",
+  "dgSpecHash": "Lj3E+BdiWxU2kDqh9XgavbIvzo6YY2fnZXUvrZjiNrvBJtEsJzxZ/ByHLdtUfhXKCEEdSs89wNtCj/7V9s9CHQ==",
   "success": true,
   "projectFilePath": "/Users/cenkerkumlucali/codes/microservice/src/Services/CatalogService/CatalogService.Api/CatalogService.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/consul/1.6.1.1/consul.1.6.1.1.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",

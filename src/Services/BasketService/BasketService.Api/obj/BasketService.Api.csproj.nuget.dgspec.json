@@ -4,14 +4,81 @@
     "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj": {}
   },
   "projects": {
-    "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj": {
+    "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj",
-        "projectName": "BasketService.Api",
-        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj",
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj",
+        "projectName": "EventBus.AzureServiceBus",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj",
         "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
-        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/obj/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj",
+        "projectName": "EventBus.Base",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
@@ -38,6 +105,248 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj",
+        "projectName": "EventBus.Factory",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.AzureServiceBus/EventBus.AzureServiceBus.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
+        "projectName": "EventBus.RabbitMQ",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/EventBus.RabbitMQ.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.RabbitMQ/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj",
+        "projectName": "BasketService.Api",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/BasketService.Api.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/BasketService/BasketService.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.6.10.7, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.23.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Graylog": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.66, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -58,6 +367,174 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj",
+        "projectName": "IdentityService.Api",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/IdentityService.Api.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/src/Services/IdentityService/IdentityService.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.6.1.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj",
+        "projectName": "EventBus.UnitTest",
+        "projectPath": "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/EventBus.UnitTest.csproj",
+        "packagesPath": "/Users/cenkerkumlucali/.nuget/packages/",
+        "outputPath": "/Users/cenkerkumlucali/codes/microservice/tests/BuildingBlocks/EventBus.UnitTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/cenkerkumlucali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Base/EventBus.Base.csproj"
+              },
+              "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj": {
+                "projectPath": "/Users/cenkerkumlucali/codes/microservice/src/BuildingBlocks/EventBus/EventBus.Factory/EventBus.Factory.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "95zJGn8T/adugaNH7/x8QumvFbSNCxHMXGNn/nblqRHKTmg9Y3vbjpUUDpV1MEeDLCC7qOZJeq9RLE95VRfygQ==",
+  "dgSpecHash": "H+rDossE00ot3uE+BHNWAfv7TlJRWrrSofcWrboSHsRsdAUKUai1LioE4gkICf5MhImCSYvSplWY+YWlL8IkgA==",
   "success": true,
   "projectFilePath": "/Users/cenkerkumlucali/codes/microservice/src/Services/OrderService/OrderService.Domain/OrderService.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
