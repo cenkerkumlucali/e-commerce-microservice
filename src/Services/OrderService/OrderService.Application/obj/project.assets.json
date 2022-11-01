@@ -27,7 +27,7 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "MediatR/10.0.1": {
+      "MediatR/11.0.0": {
         "type": "package",
         "dependencies": {
           "MediatR.Contracts": "1.0.1"
@@ -224,17 +224,17 @@
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "MediatR/10.0.1": {
-      "sha512": "vnjbk4giDJzJelh34Ygt0eorApCKrRFB7j0pauFPY1oxfO3cEZ7FugBrIOjCM76SDGTOmPFfbfmVnz1t3iFrGA==",
+    "MediatR/11.0.0": {
+      "sha512": "8klzVGZQiA2oxZRzQFBZbdPD/IQUm9RYtfiyTDKhxDQ99Gi93+GXt1ZJjH2D7Lh7ZFHCv5XdkwbmfHEQBCatPg==",
       "type": "package",
-      "path": "mediatr/10.0.1",
+      "path": "mediatr/11.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "gradient_128x128.png",
         "lib/netstandard2.1/MediatR.dll",
         "lib/netstandard2.1/MediatR.xml",
-        "mediatr.10.0.1.nupkg.sha512",
+        "mediatr.11.0.0.nupkg.sha512",
         "mediatr.nuspec"
       ]
     },
@@ -520,7 +520,7 @@
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "EventBus.Base >= 1.0.0",
-      "MediatR >= 10.0.1",
+      "MediatR >= 11.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "OrderService.Domain >= 1.0.0"
@@ -580,7 +580,7 @@
           },
           "MediatR": {
             "target": "Package",
-            "version": "[10.0.1, )"
+            "version": "[11.0.0, )"
           },
           "MediatR.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -610,16 +610,5 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: MediatR from 11.0.0 to 10.0.1. Reference the package directly from the project to select a different version. \n OrderService.Application -> OrderService.Domain -> MediatR (>= 11.0.0) \n OrderService.Application -> MediatR (>= 10.0.1)",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

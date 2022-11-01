@@ -13,7 +13,7 @@ public class OrderDbContextDesignFactory : IDesignTimeDbContextFactory<OrderDbCo
 
     public OrderDbContext CreateDbContext(string[] args)
     {
-        var connStr = "Data Source=localhost; Initial Catalog=SellingBuddyOrder;Persist Security Info=True;Integrated Security=True;";
+        var connStr = "Server=localhost;Database=microservice;User Id=sa;Password=bigStrongPwd;";
 
         var optionsBuilder = new DbContextOptionsBuilder<OrderDbContext>()
             .UseSqlServer(connStr);

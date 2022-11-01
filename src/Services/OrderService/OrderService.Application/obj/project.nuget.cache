@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5O7UcgSLf9bKBIeHacRshlbbDo527YiVQ+7hIZBmRzcevJrVZhM/6SDf794WnmzY5tWxrCKzXOVJt74unQG5yg==",
-  "success": false,
+  "dgSpecHash": "8+4fpoL6h9LmC0IcY+QtR5pYjSbakP6dWn7EX6152vNCTNPLNe/l7+tjKDW8cdYaKMZiOx8/wYiLOKqT8022xQ==",
+  "success": true,
   "projectFilePath": "/Users/cenkerkumlucali/codes/microservice/src/Services/OrderService/OrderService.Application/OrderService.Application.csproj",
   "expectedPackageFiles": [
     "/Users/cenkerkumlucali/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "/Users/cenkerkumlucali/.nuget/packages/mediatr/10.0.1/mediatr.10.0.1.nupkg.sha512",
+    "/Users/cenkerkumlucali/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/10.0.1/mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -19,15 +19,5 @@
     "/Users/cenkerkumlucali/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/cenkerkumlucali/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: MediatR from 11.0.0 to 10.0.1. Reference the package directly from the project to select a different version. \n OrderService.Application -> OrderService.Domain -> MediatR (>= 11.0.0) \n OrderService.Application -> MediatR (>= 10.0.1)",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
